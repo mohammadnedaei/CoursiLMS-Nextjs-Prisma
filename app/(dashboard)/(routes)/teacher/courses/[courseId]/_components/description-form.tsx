@@ -12,21 +12,23 @@ import {Button} from "@/components/ui/button";
 import {Pencil} from "lucide-react";
 import {useState} from "react";
 import toast from "react-hot-toast";
+import {cn} from "@/lib/utils";
+import {Textarea} from "@/components/ui/textarea";
 
-interface TitleFormProps {
+interface DescriptionFormProps {
     initialData: {
-        title: string
+        description: string
     };
     courseId: string
 }
 
 const formSchema = z.object({
-    title: z.string().min(1, {
-        message: "Title is required"
+    description: z.string().min(1, {
+        message: "Description is required"
     })
 })
 
-export const TitleForm = ({initialData, courseId}: TitleFormProps) => {
+export const DescriptionForm = ({initialData, courseId}: DescriptionFormProps) => {
     const [isEditing, setIsEditing] = useState(false)
 
     const toggleEdit = () => setIsEditing((current) => !current);
@@ -53,7 +55,7 @@ export const TitleForm = ({initialData, courseId}: TitleFormProps) => {
     return (
         <div className="mt-6 border bg-slate-100 rounded-md p-4">
             <div className="font-medium flex items-center justify-between">
-                Course title
+                Course description
                 <Button onClick={toggleEdit} variant="ghost">
                     {isEditing ? (
                             <>Cancel</>
@@ -61,25 +63,28 @@ export const TitleForm = ({initialData, courseId}: TitleFormProps) => {
                         !isEditing && (
                             <>
                                 <Pencil className="h-4 w-4 mr-2"/>
-                                Edit title
+                                Edit description
                             </>
                         )}
 
                 </Button>
             </div>
             {!isEditing && (
-                <p className="text-sm mt-2">
-                    {initialData.title}
+                <p className={cn(
+                    "text-sm mt-2",
+                    !initialData.description && "text-slate-500 italic"
+                )}>
+                    {initialData.description || "No description"}
                 </p>
             )}
             {isEditing && (
                 <Form {...form}>
                     <form className="space-y-4 mt-4" onSubmit={form.handleSubmit(onSubmit)}>
-                        <FormField name="title" control={form.control} render={({field}) => (
+                        <FormField name="description" control={form.control} render={({field}) => (
                             <FormItem>
                                 <FormControl>
-                                    <Input disabled={isSubmitting}
-                                           placeholder="e.g. 'Advanced web development'" {...field} />
+                                    <Textarea disabled={isSubmitting}
+                                              placeholder="e.g. 'This course is about...'" {...field} />
                                 </FormControl>
                                 <FormMessage/>
                             </FormItem>
