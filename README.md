@@ -1,6 +1,6 @@
 ## Getting Started
 
-####    * First, create a .env file:
+####          * First, create a .env file:
 
 ```bash
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
@@ -14,10 +14,18 @@ UPLOADTHING_SECRET
 UPLOADTHING_APP_ID
 ```
 
-####    * Then run the following in terminal:
+####          * Then run the following in terminal:
 
 ```bash
 npm i && npm run dev
+
+npx prisma generate
+
+npx prisma db push
+
+node scripts/seed.ts  (to add seeds to db)
+
+Control + C ===> npm run dev   (restart server) 
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
