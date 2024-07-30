@@ -18,6 +18,7 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover"
+import {useEffect} from "react";
 
 interface ComboboxProps {
     options: { label: string; value: string }[];
@@ -39,7 +40,7 @@ export const Combobox = ({options, value, onChange}: ComboboxProps) => {
                 >
                     {value
                         ? options.find((option) => option.value === value)?.label
-                        : "Select option"}
+                        : "Select option..."}
                     <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50"/>
                 </Button>
             </PopoverTrigger>
@@ -52,7 +53,7 @@ export const Combobox = ({options, value, onChange}: ComboboxProps) => {
                             {options.map((option) => (
                                 <CommandItem
                                     key={option.value}
-                                    onSelect={(currentValue) => {
+                                    onSelect={() => {
                                         onChange(option.value === value ? "" : option.value)
                                         setOpen(false)
                                     }}
