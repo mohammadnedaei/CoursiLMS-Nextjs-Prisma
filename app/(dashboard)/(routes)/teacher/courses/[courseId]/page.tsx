@@ -9,6 +9,7 @@ import {ImageForm} from "@/app/(dashboard)/(routes)/teacher/courses/[courseId]/_
 import {CategoryForm} from "@/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/category-form";
 import {PriceForm} from "@/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/price-form";
 import {AttachmentForm} from "@/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/attachment-form";
+import {ChaptersForm} from "@/app/(dashboard)/(routes)/teacher/courses/[courseId]/_components/chapters-form";
 
 const CourseIdPage = async ({params}: { params: { courseId: string } }) => {
     const {userId} = auth()
@@ -18,9 +19,15 @@ const CourseIdPage = async ({params}: { params: { courseId: string } }) => {
 
     const course = await db.course.findUnique({
         where: {
-            id: params.courseId
+            id: params.courseId,
+            userId
         },
         include: {
+            chapters: {
+                orderBy: {
+                    position: "asc",
+                },
+            },
             attachments: {
                 orderBy: {
                     createdAt: "desc",
@@ -45,7 +52,8 @@ const CourseIdPage = async ({params}: { params: { courseId: string } }) => {
         course.description,
         course.imageUrl,
         course.price,
-        course.categoryId
+        course.categoryId,
+        course.chapters.some(chapter => chapter.isPublished),
     ];
 
     const totalFields = requiredFields.length;
@@ -100,7 +108,7 @@ const CourseIdPage = async ({params}: { params: { courseId: string } }) => {
                                 Course chapters
                             </h2>
                         </div>
-                        <DescriptionForm
+                        <ChaptersForm
                             initialData={course}
                             courseId={course.id}
                         />
