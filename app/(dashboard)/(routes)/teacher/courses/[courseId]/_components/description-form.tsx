@@ -61,7 +61,7 @@ export const DescriptionForm = ({initialData, courseId}: DescriptionFormProps) =
                     {isEditing ? (
                             <>Cancel</>
                         ) :
-                        !isEditing && (
+                        (
                             <>
                                 <Pencil className="h-4 w-4 mr-2"/>
                                 Edit description
