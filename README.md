@@ -1,6 +1,6 @@
 ## Getting Started
 
-####          * First, create a .env file:
+####           * First, create a .env file:
 
 ```bash
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
@@ -12,9 +12,11 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL
 DATABASE_URL
 UPLOADTHING_SECRET
 UPLOADTHING_APP_ID
+MUX_TOKEN_ID
+MUX_TOKEN_SECRET
 ```
 
-####          * Then run the following in terminal:
+####           * Then run the following in terminal:
 
 ```bash
 npm i && npm run dev
