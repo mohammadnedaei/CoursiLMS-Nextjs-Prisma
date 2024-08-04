@@ -48,6 +48,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "encoding": "^0.1.13",
     "prisma": "^5.17.0"
   }
 }
