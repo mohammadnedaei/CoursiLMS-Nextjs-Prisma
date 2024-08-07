@@ -32,7 +32,7 @@ export async function DELETE(
         })
         return NextResponse.json(attachment)
     } catch (error) {
-        console.log("ATTACHMENT_ID", error)
+        console.log("[ATTACHMENT_ID]", error)
         return new NextResponse("Internal Error", {status: 500});
     }
 }
