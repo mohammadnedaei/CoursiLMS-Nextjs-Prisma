@@ -12,7 +12,9 @@ export const ConfettiProvider = () => {
     return (
         <ReactConfetti
             className="pointer-events-none z-[100]"
-            numberOfPieces={100}
+            numberOfPieces={40}
+            opacity={0.7}
+            gravity={0.07}
             recycle={false}
             onConfettiComplete={() => {
                 confetti.onClose();
