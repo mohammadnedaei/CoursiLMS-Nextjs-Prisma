@@ -2,6 +2,7 @@ import {auth} from "@clerk/nextjs";
 import {redirect} from "next/navigation";
 import {getChapter} from "@/actions/get-chapter";
 import {Banner} from "@/components/banner";
+import {VideoPlayer} from "@/app/(course)/courses/[courseId]/chapters/[chapterId]/_components/video-player";
 
 const ChapterIdPage = async ({params}: { params: { courseId: string; chapterId: string; } }) => {
     const {userId} = auth()
@@ -48,7 +49,7 @@ const ChapterIdPage = async ({params}: { params: { courseId: string; chapterId: 
                         title={chapter.title}
                         courseId={params.courseId}
                         nextChapterId={nextChapter?.id}
-                        playbackId={muxData?.playbackId}
+                        playbackId={muxData?.playbackId!}
                         isLocked={isLocked}
                         completeOnEnd={completeOnEnd}
                     />
