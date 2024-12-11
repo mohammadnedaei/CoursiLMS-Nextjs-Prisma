@@ -78,6 +78,8 @@ stripe listen --forward-to localhost:3000/api/webhook (KEEP IT RUNNING)
 #### To reset the entire database run this:
 
 ```bash
+npx prisma migrate reset
+```
 
 ### ✈️ Business Plan
 
@@ -104,7 +106,6 @@ You can learn more about `React` [here](https://reactjs.org/)
 ### 📞 Contact
 
     Discord: Mohammad81#3277
-npx prisma migrate reset
-```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
