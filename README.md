@@ -80,6 +80,7 @@ stripe listen --forward-to localhost:3000/api/webhook (KEEP IT RUNNING)
 ```bash
 npx prisma migrate reset
 ```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### ✈️ Business Plan
 
@@ -108,4 +109,3 @@ You can learn more about `React` [here](https://reactjs.org/)
     Discord: Mohammad81#3277
 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
