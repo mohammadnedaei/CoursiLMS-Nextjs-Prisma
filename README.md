@@ -96,7 +96,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### ✈️ Business Plan
 
-The app also contains a business plan. download from [here]()
+The app also contains a business plan. download from [here](https://github.com/mohammadnedaei/Coursi-LMS-Nextjs-Prisma/blob/main/Coursi%20Business%20Plan.pdf)
 
 ### 🔧 Contributing
 
