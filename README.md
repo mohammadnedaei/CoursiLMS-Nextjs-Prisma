@@ -13,6 +13,18 @@
 #### Screenshots may change in the future because of UI/UX changes.
 
 ### 🖥️ Desktop view:
+![Coursi - Learn Anytime_ Anywhere with Expert-Led Online Courses · 11 36am · 12-11](https://github.com/user-attachments/assets/3213a60e-3132-41de-9537-08b98274cd3d)
+
+![Coursi - Learn Anytime_ Anywhere with Expert-Led Online Courses · 11 37am · 12-11](https://github.com/user-attachments/assets/b96636dd-eec8-42db-a875-b6a731227851)
+![Coursi - Learn Anytime_ Anywhere with Expert-Led Online Courses](https://github.com/user-attachments/assets/56e4067f-7d6c-4aea-afcb-bff269e5fc49)
+![Screenshot 2024-12-11 at 11 39 08 AM](https://github.com/user-attachments/assets/5b79f2a8-dbd3-4e60-aadc-e8fb7453da27)
+![Screenshot 2024-12-11 at 11 41 03 AM](https://github.com/user-attachments/assets/eeb811e6-8bf3-4e23-a4bc-82beeee2bdc4)
+![Screenshot 2024-12-11 at 11 42 38 AM](https://github.com/user-attachments/assets/4204ba37-182c-4798-b605-dd872d84ad17)
+![Screenshot 2024-12-11 at 11 42 23 AM](https://github.com/user-attachments/assets/3cde2f43-e86a-4d01-9b0d-eb774fea2ca3)
+![Screenshot 2024-12-11 at 11 42 11 AM](https://github.com/user-attachments/assets/183219c5-01f6-496f-8aec-fe85c8c80f0d)
+![Screenshot 2024-12-11 at 11 40 42 AM](https://github.com/user-attachments/assets/541420e1-38b2-4553-b572-d3cdf97cd4da)
+
+
 ## 🚀 Usage
 ####                           * First, create a .env file:
 
