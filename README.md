@@ -8,6 +8,26 @@
 `Coursi-LMS-Nextjs-Prisma` is a refreshed reboot and clone of `Coursera`. Front-End is created with
 `React` and modern UI libraries. There is a `dashboard` for users and teachers. Back-End is working with a `Nextjs` server connected to a `MySQL` database using `Prisma` ORM.
 
+### 🧰 Libraries and Tools
+
+✅ Tailwind UI \
+✅ ShadCN UI
+- Lucide React
+
+✅ Axios \
+✅ Nextjs App Router \
+✅ React Hooks \
+✅ MySQL Database
+✅ Prisma Database ORM
+✅ Normalized Database (3NF)
+✅ Foreign Keys and Primary Keys Specified
+✅ UploadThing \
+✅ Mux Video Stream \
+✅ Clerk Auth \
+✅ React DND \
+✅ Zod Validation \
+✅ React Hot Toast \
+
 ### This app looks like this:
 
 #### Screenshots may change in the future because of UI/UX changes.
