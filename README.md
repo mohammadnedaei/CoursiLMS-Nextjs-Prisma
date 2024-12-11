@@ -1,8 +1,18 @@
-# 🛡️ &middot; [Coursi LMS Nextjs Prisma](https://github.com/mohammadnedaei/Coursi-LMS-Nextjs-Prisma) &middot;
+# 📖 &middot; [Coursi LMS Nextjs Prisma](https://github.com/mohammadnedaei/Coursi-LMS-Nextjs-Prisma) &middot;
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mohammadnedaei/Coursi-LMS-Nextjs-Prisma/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/mohammadnedaei/Coursi-LMS-Nextjs-Prisma/pulls)
 
+## 🔎 Overview
+
+`Coursi-LMS-Nextjs-Prisma` is a refreshed reboot and clone of `Coursera`. Front-End is created with
+`React` and modern UI libraries. There is a `dashboard` for users and teachers. Back-End is working with a `Nextjs` server connected to a `MySQL` database using `Prisma` ORM.
+
+### This app looks like this:
+
+#### Screenshots may change in the future because of UI/UX changes.
+
+### 🖥️ Desktop view:
 ####                           * First, create a .env file:
 
 ```bash
