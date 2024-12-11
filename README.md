@@ -1,4 +1,7 @@
-## Getting Started
+# 🛡️ &middot; [Coursi LMS Nextjs Prisma](https://github.com/mohammadnedaei/Coursi-LMS-Nextjs-Prisma) &middot;
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mohammadnedaei/Coursi-LMS-Nextjs-Prisma/blob/main/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/mohammadnedaei/Coursi-LMS-Nextjs-Prisma/pulls)
 
 ####                           * First, create a .env file:
 
