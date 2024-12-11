@@ -13,6 +13,7 @@
 #### Screenshots may change in the future because of UI/UX changes.
 
 ### 🖥️ Desktop view:
+## 🚀 Usage
 ####                           * First, create a .env file:
 
 ```bash
@@ -77,6 +78,32 @@ stripe listen --forward-to localhost:3000/api/webhook (KEEP IT RUNNING)
 #### To reset the entire database run this:
 
 ```bash
+
+### ✈️ Business Plan
+
+The app also contains a business plan. download from [here]()
+
+### 🔧 Contributing
+
+Feel free to fork this repo and make pull requests.
+You can learn more about `React` [here](https://reactjs.org/)
+
+### 🎯 TODO
+
+🚧 Code factor & code quality tools improvements \
+🔃 Add Shortcuts in manifest \
+
+### 💚 Support
+
+<a href="https://sociabuzz.com/mohammadnedaei/donate" target="_blank"><img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" height="32px" alt="Sociabuzz"></a>
+
+### ✍🏻 Author
+
+     Mohammad Nedaei
+
+### 📞 Contact
+
+    Discord: Mohammad81#3277
 npx prisma migrate reset
 ```
 
